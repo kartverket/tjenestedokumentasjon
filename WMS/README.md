@@ -2,4 +2,4 @@
 
 ## Generell info
 
-## test
+## test 2 i forhold til github
