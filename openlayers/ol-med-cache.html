@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <title>OpenLayers med cache</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+        <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+    </head>
+    <body>
+        <h1>OpenLayers med cache</h1>
+        <div id="map" class="map" style="height: 400px"></div>
+        <script type="text/javascript">
+            // topo4, topo4graatone, norges_grunnkart, norges_grunnkart_graatone, sjokartraster2
+            var layerName = 'topo4';
+
+            // Link til Kartverkets cache-url.
+            var cacheUrl = 'https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=' + layerName + '&zoom={z}&x={x}&y={y}';
+
+            // Start-zoom
+            var zoomLevel = 5;
+
+            var map = new ol.Map({
+                target: 'map',
+                layers: [
+                    // Legg til en OpenStreetMap lag
+                    new ol.layer.Tile({
+                        source: new ol.source.OSM()
+                    }),
+                    //Legg til Kartverkets lag
+                    new ol.layer.Tile({
+                        source: new ol.source.XYZ({
+                            url: cacheUrl,
+                            attributions: '<a href="http://www.kartverket.no/">Kartverket</a>'
+                        })
+                    })
+                ],
+                view: new ol.View({
+                    center: ol.proj.fromLonLat([13.41, 65.42]),
+                    zoom: zoomLevel
+                })
+            });
+        </script>
+    </body>
+
+</html>
