@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+        <title>Leaflet med cache</title>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Leaflet med cache</h1>
+        <div id="map-container" style="height: 400px"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+        <script>
+            // topo4, topo4graatone, norges_grunnkart, norges_grunnkart_graatone, sjokartraster2
+            var layerName = 'topo4';
+
+            // Link til Kartverkets cache-url.
+            var cacheUrl = 'https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=' + layerName + '&zoom={z}&x={x}&y={y}';
+
+            // Legg til bakgrunnslag.
+            var backgroundLayer = L.tileLayer(cacheUrl, {
+                attribution: '<a href="https://kartverket.no/">Kartverket</a>'
+            });
+
+            // Senterpunkt for kartet med lengdegrad (longitude) og breddegrad (latitude) i desimalgrader.
+            var centerPoint = L.latLng(latitude=60.143851, longitude=10.2489956);
+
+            // Start-zoom
+            var zoomLevel = 17;
+
+            // Start kartklienten. Pek til et tomt <div>-element, med id. Sett en viewport basert på center og zoom.
+            var mapClient = L.map('map-container').setView(centerPoint, zoomLevel).addLayer(backgroundLayer);
+
+        </script>
+    </body>
+</html>
