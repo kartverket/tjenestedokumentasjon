@@ -9,6 +9,7 @@ Tjenester:
 
 * [WMS](./WMS/README.md)
 * [WFS](./WFS/README.md)
+* [WMTS](./WMS/README.md)
 
 Eksempler:
 
