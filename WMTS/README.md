@@ -39,6 +39,8 @@ URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [Get
 
 #include "./openlayers/ol-med-cache.html"
 
+{% include_relative ./openlayers/ol-med-cache.html %}
+
 ### WMS-C
 
 URL til WMS-C: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... (GetCapabilities)
