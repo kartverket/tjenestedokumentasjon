@@ -9,3 +9,4 @@ Kildekode til OpenLayers ligger på GitHub:  [Kildekode](https://github.com/open
 ## Eksempelfiler
 
 - OpenLayers med cache
+- OpenLayers med WMTS
