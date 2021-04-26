@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <title>OpenLayers wmts eksempel</title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/css/ol.css" type="text/css">
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
+</head>
+
+<body>
+    <h1>OpenLayers wmts eksempel</h1>
+    <div id="map" class="map" style="height: 400px"></div>
+    <script type="text/javascript">
+        // topo4, topo4graatone, norges_grunnkart, norges_grunnkart_graatone, sjokartraster2
+        var layerName = 'topo4';
+
+        // Spesifiser projection og tilhørige extent. Siden vi er i norge bruker vi EPSG:25833 [https://epsg.io/25833]
+        var sProjection = 'EPSG:25833';
+        var extent = {
+            'EPSG:25833': [-2500000, 3500000, 3045984, 9045984]
+        };
+        var projection = new ol.proj.Projection({
+            code: sProjection,
+            extent: extent[sProjection]
+        });
+        ol.proj.addProjection(projection);
+
+        // Link til Kartverkets wmts-url.
+        var wmtsUrl = 'https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts';
+
+        // Start-zoom
+        var zoomLevel = 4;
+
+        // kalkuler resolutions og matrixIds set for wmts
+        var projectionExtent = projection.getExtent();
+        var size = ol.extent.getWidth(projectionExtent) / 256;
+        var resolutions = [],
+            matrixIds = [];
+
+        for (var z = 0; z < 21; ++z) { //Max 18?
+            resolutions[z] = size / Math.pow(2, z);
+            matrixIds[z] = sProjection + ":" + z;
+        }
+
+        // sette den egenltige kart
+        var map = new ol.Map({
+            target: 'map',
+            layers: [
+                //Legg til Kartverkets lag
+                new ol.layer.Tile({
+                    source: new ol.source.WMTS({
+                        url: wmtsUrl,
+                        layer: layerName,
+                        matrixSet: sProjection,
+                        format: 'image/png',
+                        projection: projection,
+                        tileGrid: new ol.tilegrid.WMTS({
+                            origin: ol.extent.getTopLeft(projection.getExtent()),
+                            resolutions: resolutions,
+                            matrixIds: matrixIds
+                        }),
+                        style: 'default'
+                    })
+                })
+            ],
+            view: new ol.View({
+                projection: projection,
+                center: [-15074, 6820724],
+                zoom: zoomLevel
+            })
+        });
+    </script>
+</body>
+
+</html>
