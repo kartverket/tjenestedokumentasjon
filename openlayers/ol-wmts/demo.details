@@ -1,0 +1,10 @@
+---
+ name: OpenLayers med WMTS
+ description: OpenLayers med WMTS
+ normalize_css: no
+ dtd: html 5
+ wrap: d
+ panel_html: 0
+ panel_js: 0
+ panel_css: 0
+...
