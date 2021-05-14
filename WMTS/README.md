@@ -13,10 +13,10 @@ Cache-tjenestene bygger på underliggende WMS-tjenester og er innholdsmessig ide
 
 ## Eksempel kall
 
-[WMTS](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?&layer=topo4&style=default&tilematrixset=EPSG%3A25833&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A25833%3A4&TileCol=7&TileRow=6)
-[WMS-C](https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS=topo4&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fjpeg&SRS=EPSG%3A3857&BBOX=626172.13571241,8140237.7642584,1252344.2714246,8766409.8999705&WIDTH=256&HEIGHT=256)
-[Google Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)
-[Bing Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)
+[WMTS](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?&layer=topo4&style=default&tilematrixset=EPSG%3A25833&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A25833%3A4&TileCol=7&TileRow=6)\
+[WMS-C](https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS=topo4&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fjpeg&SRS=EPSG%3A3857&BBOX=626172.13571241,8140237.7642584,1252344.2714246,8766409.8999705&WIDTH=256&HEIGHT=256)\
+[Google Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)\
+[Bing Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)\
 
 
 ### WMTS
