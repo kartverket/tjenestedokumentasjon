@@ -27,11 +27,9 @@ URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [Get
 
 [WMTS](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?&layer=topo4&style=default&tilematrixset=EPSG%3A25833&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A25833%3A4&TileCol=7&TileRow=6)
 
-[Google Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=7&x=67&y=37&format=image/png)
+URL Mønster:
+https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?REQUEST=GetTile&SERVICE=WMTS&VERSION=1.0.0&LAYER={lagnavn}&STYLE=&TILEMATRIXSET={EPSG:####}&TILEMATRIX={EPSG:####{z}}&TILECOL={x}&TILEROW={y}&Format={image type}
 
-[Bing Maps]
-
-[WMS-C](https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS=topo4&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fjpeg&SRS=EPSG%3A3857&BBOX=626172.13571241,8140237.7642584,1252344.2714246,8766409.8999705&WIDTH=256&HEIGHT=256)
 
 #### Klient eksempler
 
@@ -48,6 +46,9 @@ URL til WMS: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... [GetCapabi
 
 [WMS-C](https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS=topo4&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fjpeg&SRS=EPSG%3A3857&BBOX=626172.13571241,8140237.7642584,1252344.2714246,8766409.8999705&WIDTH=256&HEIGHT=256)
 
+URL Mønster:
+https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS={lagnavn}&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT={format}&SRS={EPSG:####}&BBOX={bbox}&WIDTH=256&HEIGHT=256
+
 #### Klient eksempler
 
 [openlayers](../openlayers/ol-med-cache.html)
@@ -62,8 +63,10 @@ URL til WMS: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... [GetCapabi
 
 #### Eksempel kall
 
-[Google Maps] (https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)
-https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png
+[Google Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)
+
+URL Mønster:
+https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers={lagnavn}&zoom={z}&x={x}&y={y}&format={format}
 
 #### Klient eksempler
 
@@ -79,8 +82,10 @@ Informajson om Bing maps protokollen og quadkey: [Bing Maps Tile System](https:/
 
 #### Eksempel kall
 
-[Bing Maps] (https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)
-http://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=[Tjenestenavn i cache]&quadkey=[keynr]&format=image/png
+[Bing Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)
+
+URL Mønster:
+http://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers={lagnavn}&quadkey={keynr}&format={format}
 
 #### Klient eksempler
 
