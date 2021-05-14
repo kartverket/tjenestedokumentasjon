@@ -18,6 +18,7 @@ Cache-tjenestene bygger på underliggende WMS-tjenester og er innholdsmessig ide
 [Google Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)\
 [Bing Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)
 
+---
 
 ### WMTS
 
@@ -41,6 +42,7 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?REQUEST=GetTile&SERVICE
 
 [openlayers](../openlayers/ol-wmts.html)
 
+---
 
 ### WMS-C
 
@@ -57,7 +59,7 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS={lagnavn}&SERVICE=WMS
 
 #### Klient eksempler
 
-
+---
 
 ### Google Maps
 
@@ -75,6 +77,8 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers={lagnavn}&zoom=
 #### Klient eksempler
 
 [openlayers](../openlayers/ol-med-cache.html)
+
+---
 
 ### Bing Maps
 
