@@ -40,13 +40,48 @@ URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [Get
 
 ### WMS-C
 
-URL til WMS-C: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... (GetCapabilities)
-URL til Google Maps: http://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=[Tjenestenavn i cache]&zoom={Z}&x={X}&y={Y}
-URL til Bing Maps: http://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=[Tjenestenavn i cache]&quadkey=[keynr]&format=image/png
-Cache-serverne opencache2.statkart.no og opencache3.statkart.no kan brukes til lastbalansering og for å få webklienter til å sende flere samtidige forespørsler. Kartverkets åpne cache-tjenester kan brukes i flere applikasjoner ved hjelp av Leaflet. 
+WMS-C (WMS tile caching) er en gammel spesifikasjon som er erstatett av WMTS, men fremdeles brukes i mange klienter. Fordelen med denne protokollen er at mønsteret på kallene er identisk med WMS, som mange er kjent med. 
 
-For å åpne en WMTS på desktop-applikasjon som QGIS:
+URL til WMS: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&VERSION=1.1.1&REQUEST=getcapabilities&TILED=true "GetCapabilities - teknisk informasjon")
 
-Velg «add WMS» og "Ny"
-Gi et navn og lim inn http://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?
-Klikk "OK", "Connect" og velg de lagene du ønsker (vi tilbyr .jpeg og .png in ulike koordinatsystemer).
+#### Eksempel kall
+
+[WMS-C](https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS=topo4&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fjpeg&SRS=EPSG%3A3857&BBOX=626172.13571241,8140237.7642584,1252344.2714246,8766409.8999705&WIDTH=256&HEIGHT=256)
+
+#### Klient eksempler
+
+[openlayers](../openlayers/ol-med-cache.html)
+
+### Google Maps
+
+'Google was one of the first major mapping providers to adopt the tiled web maps. Others, like Bing and OpenStreetMap, followed the same practice. GIS software vendors, like Esri and Oracle, provide functionality for map tiling and caching of both vector layers and raster images.'
+
+Denne protokollen bruker en enkel z,x,y mønster som betyr at tjenester er enkel å bruke i applikasjoner, men en ulemper er at denne protokollen støtter kun google web mercator projeksjonen (EPSG:900913/3857).
+
+URL til WMS: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&VERSION=1.1.1&REQUEST=getcapabilities&TILED=true "GetCapabilities - teknisk informasjon")
+
+#### Eksempel kall
+
+[Google Maps] (https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)
+https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png
+
+#### Klient eksempler
+
+[openlayers](../openlayers/ol-med-cache.html)
+
+### Bing Maps
+
+Bing Maps protokollen (https://docs.microsoft.com/en-us/bingmaps/#pivot=main&panel=BingMapsAPI) var tidligere kjent som VE (virtual Earth) or brukes ikke mye utenfor Bing applikasjoner.
+
+Denne protokollen bruker en quadkey for å kode informasjonen om hvilken tile som skal returneres, og i likhet med Google maps er en ulemper at denne protokollen støtter kun web mercator projeksjonen (EPSG:900913/3857).
+
+Informajson om Bing maps protokollen og quadkey: [Bing Maps Tile System](https://docs.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system)
+
+#### Eksempel kall
+
+[Bing Maps] (https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)
+http://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=[Tjenestenavn i cache]&quadkey=[keynr]&format=image/png
+
+#### Klient eksempler
+
+[openlayers](../openlayers/ol-med-cache.html)
