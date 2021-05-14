@@ -6,22 +6,22 @@
 
 >[Informasjon om cache tjenester fra Kartverket](https://kartkatalog.geonorge.no/?type=service&DistributionProtocols=WMTS-tjeneste&organization=Kartverket)
 
-## Protokoller
-Tjenestene fra Kartverket støtter fire ulike protokoller som gjør dem svært anvendbare i webapplikasjoner: WMTS,  Google Maps API, Bing Maps API og WMS-C.
+-## Protokoller
+-Tjenestene fra Kartverket støtter fire ulike protokoller som gjør dem svært anvendbare i webapplikasjoner: WMTS,  Google Maps API, Bing Maps API og WMS-C.
 
-Cache-tjenestene bygger på underliggende WMS-tjenester og er innholdsmessig identisk med disse. For dokumentasjon av cache-tjenestene henvises det til tilhørende WMS-tjenester.
+-Cache-tjenestene bygger på underliggende WMS-tjenester og er innholdsmessig identisk med disse. For dokumentasjon av cache-tjenestene henvises det til tilhørende WMS-tjenester.
 
-URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
+-URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
 
-### WMTS
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;### WMTS
 
-'A Web Map Tile Service is a standard protocol for serving pre-rendered or run-time computed georeferenced map tiles over the Internet. The specification was developed and first published by the Open Geospatial Consortium in 2010' [wikipedia](https://en.wikipedia.org/wiki/Web_Map_Tile_Service)
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'A Web Map Tile Service is a standard protocol for serving pre-rendered or run-time computed georeferenced map tiles over the Internet. The specification was developed and first published by the Open Geospatial Consortium in 2010' [wikipedia](https://en.wikipedia.org/wiki/Web_Map_Tile_Service)
 
-[Introduksjon til WMTS spesifikasjonen](http://opengeospatial.github.io/e-learning/wmts/text/main.html)
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Introduksjon til WMTS spesifikasjonen](http://opengeospatial.github.io/e-learning/wmts/text/main.html)
 
-[WMTS - Operasjoner](http://opengeospatial.github.io/e-learning/wmts/text/operations.html)
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[WMTS - Operasjoner](http://opengeospatial.github.io/e-learning/wmts/text/operations.html)
 
-URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
 
 #### Eksempel kall
 
