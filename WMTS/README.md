@@ -1,12 +1,12 @@
 # WMTS (cache)
 
->## Generell informasjon
+## Generell informasjon
 
->Cache-tjenester fungerer ganske likt en WMS, men er basert på et hurtiglager med pregenererte kartbilder eller fliser ("tiles" på engelsk) på 256x256 pixler i predefinerte målestokker (zoomnivåer). En cache-tjeneste leverer ikke kartbilder i fritt valgt målestokk, men kun i de forhåndsdefinerte målestokkene som er definert i tjenesten. Cache-tjenestene er mindre fleksible, men raskere enn WMS og vel egnet til bruk på nettsider. Google Maps eller Bing Maps er kjente tjenester som er bygd opp på denne måten
+Cache-tjenester fungerer ganske likt en WMS, men er basert på et hurtiglager med pregenererte kartbilder eller fliser ("tiles" på engelsk) på 256x256 pixler i predefinerte målestokker (zoomnivåer). En cache-tjeneste leverer ikke kartbilder i fritt valgt målestokk, men kun i de forhåndsdefinerte målestokkene som er definert i tjenesten. Cache-tjenestene er mindre fleksible, men raskere enn WMS og vel egnet til bruk på nettsider. Google Maps eller Bing Maps er kjente tjenester som er bygd opp på denne måten
 
->[Informasjon om cache tjenester fra Kartverket](https://kartkatalog.geonorge.no/?type=service&DistributionProtocols=WMTS-tjeneste&organization=Kartverket)
+[Informasjon om cache tjenester fra Kartverket](https://kartkatalog.geonorge.no/?type=service&DistributionProtocols=WMTS-tjeneste&organization=Kartverket)
 
--## Protokoller
+## Protokoller
 Tjenestene fra Kartverket støtter fire ulike protokoller som gjør dem svært anvendbare i webapplikasjoner: WMTS,  Google Maps API, Bing Maps API og WMS-C.
 
 Cache-tjenestene bygger på underliggende WMS-tjenester og er innholdsmessig identisk med disse. For dokumentasjon av cache-tjenestene henvises det til tilhørende WMS-tjenester.
