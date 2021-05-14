@@ -1,4 +1,4 @@
-# WMTS (cache)
+# Cache / Tile tjenester
 
 ## Generell informasjon
 
@@ -11,7 +11,13 @@ Tjenestene fra Kartverket støtter fire ulike protokoller som gjør dem svært a
 
 Cache-tjenestene bygger på underliggende WMS-tjenester og er innholdsmessig identisk med disse. For dokumentasjon av cache-tjenestene henvises det til tilhørende WMS-tjenester.
 
-URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
+## Eksempel kall
+
+[WMTS](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?&layer=topo4&style=default&tilematrixset=EPSG%3A25833&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix=EPSG%3A25833%3A4&TileCol=7&TileRow=6)
+[WMS-C](https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS=topo4&SERVICE=WMS&VERSION=1.1.1&REQUEST=GetMap&STYLES=&FORMAT=image%2Fjpeg&SRS=EPSG%3A3857&BBOX=626172.13571241,8140237.7642584,1252344.2714246,8766409.8999705&WIDTH=256&HEIGHT=256)
+[Google Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_gmaps?layers=topo4&zoom=9&x=271&y=148&format=image/png)
+[Bing Maps](https://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers=topo4&quadkey=12002131012&format=image/png)
+
 
 ### WMTS
 
@@ -21,7 +27,7 @@ URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [Get
 
 [WMTS - Operasjoner](http://opengeospatial.github.io/e-learning/wmts/text/operations.html)
 
-URL til WMTS: https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
+WMTS tenisk informasjon: [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?Version=1.0.0&service=wmts&request=getcapabilities "GetCapabilities - teknisk informasjon")
 
 #### Eksempel kall
 
@@ -40,7 +46,7 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?REQUEST=GetTile&SERVICE
 
 WMS-C (WMS tile caching) er en gammel spesifikasjon som er erstatett av WMTS, men fremdeles brukes i mange klienter. Fordelen med denne protokollen er at mønsteret på kallene er identisk med WMS, som mange er kjent med. 
 
-URL til WMS: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&VERSION=1.1.1&REQUEST=getcapabilities&TILED=true "GetCapabilities - teknisk informasjon")
+WMS-C tenisk informasjon: [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&VERSION=1.1.1&REQUEST=getcapabilities&TILED=true)
 
 #### Eksempel kall
 
@@ -58,8 +64,6 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS={lagnavn}&SERVICE=WMS
 'Google was one of the first major mapping providers to adopt the tiled web maps. Others, like Bing and OpenStreetMap, followed the same practice. GIS software vendors, like Esri and Oracle, provide functionality for map tiling and caching of both vector layers and raster images.'
 
 Denne protokollen bruker en enkel z,x,y mønster som betyr at tjenester er enkel å bruke i applikasjoner, men en ulemper er at denne protokollen støtter kun google web mercator projeksjonen (EPSG:900913/3857).
-
-URL til WMS: https://opencache.statkart.no/gatekeeper/gk/gk.open? ... [GetCapabilities](https://opencache.statkart.no/gatekeeper/gk/gk.open?SERVICE=WMS&VERSION=1.1.1&REQUEST=getcapabilities&TILED=true "GetCapabilities - teknisk informasjon")
 
 #### Eksempel kall
 
