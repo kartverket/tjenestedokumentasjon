@@ -1,4 +1,4 @@
-# WMTS (cache)
+<p># WMTS (cache)</p>
 
 ## Generell informasjon
 
