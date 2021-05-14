@@ -33,7 +33,7 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open_wmts?REQUEST=GetTile&SERVICE
 
 #### Klient eksempler
 
-[openlayers](../openlayers/ol-med-cache.html)
+[openlayers](../openlayers/ol-wmts.html)
 
 
 ### WMS-C
@@ -51,7 +51,7 @@ https://opencache.statkart.no/gatekeeper/gk/gk.open?LAYERS={lagnavn}&SERVICE=WMS
 
 #### Klient eksempler
 
-[openlayers](../openlayers/ol-med-cache.html)
+
 
 ### Google Maps
 
@@ -89,4 +89,3 @@ http://opencache.statkart.no/gatekeeper/gk/gk.open_ve?layers={lagnavn}&quadkey={
 
 #### Klient eksempler
 
-[openlayers](../openlayers/ol-med-cache.html)
