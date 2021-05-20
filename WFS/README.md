@@ -2,7 +2,7 @@
 
 ## Generell informasjon
 
-####WFS-tjenester
+#### WFS-tjenester
 I motsetning til WMS, som leverer et kartbilde, leverer WFS (Web Feature Service) objektene som vektordata. Grensesnittet muliggjør søking etter innhold i datasettet ved å angi søkekriterier i et filter. Filterspørringene er beskrevet med et standardisert spørrespråk, ISO 19143 Filter Encoding/OGC FES 2.0
 
 Det er først og fremst tre forespørsler/kall som brukes:

@@ -2,7 +2,7 @@
 
 ## Generell info
 
-####WMS-tjenester
+#### WMS-tjenester
 Når du bruker en WMS (Web Map Service) tjeneste, er det en server som på forespørsel sender brukeren kartutsnitt i form av rasterfiler (PNG  eller JPEG). Det kan den gjøre enten direkte i nettleseren, i en webapplikasjon eller en desktopapplikasjon. Tjenestene basert på WMS-spesifikasjonen er fleksible og gir mange muligheter. Du kan for eksempel:
 
 - Velge hvilket koordinatsystem kartbildet skal produseres i\
