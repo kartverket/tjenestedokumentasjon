@@ -10,7 +10,10 @@ Det er først og fremst tre forespørsler/kall som brukes:
 - DescribeFeatureType - henter beskrivelse av datainnholdet i form av et XML skjema (XSD)
 - GetFeature - henter selve datainnholdet/objekter med tilhørende egenskaper
 
-#### Eksempler på WFS-tjenester:
+#### Tjenesteoversikt
+Geonorge har en oversikt som viser våre WFStjenester [som ligger her](https://kartkatalog.geonorge.no/?type=service&organization=Kartverket&DistributionProtocols=WFS-tjeneste)
+
+#### Eksempel tjeneste metadata:
 Administrative enheter: https://wfs.geonorge.no/skwms1/wfs.administrative_enheter?&service=WFS&acceptversions=2.0.0&request=GetCapabilities 
 
 Stedsnavn: https://wfs.geonorge.no/skwms1/wfs.stedsnavn?request=GetCapabilities&service=WFS

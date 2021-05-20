@@ -17,7 +17,10 @@ Det finnes flere desktop- og webklienter som er i stand til å kommunisere med e
 
 Qgis brukermanual viser deg hvordan du åpner en WMS i QGIS.  Esris brukerveiledning viser hvordan du åpner en WMS i ArcMap. NB: Etter å ha åpnet WMS-en i ArcMaps, må du aktivere alle lagene du er interessert i, ellers vises ikke noe.
 
-#### Eksempler på WMS-tjenester:
+#### Tjenesteoversikt
+Geonorge har en oversikt som viser våre WMStjenester [som ligger her](https://kartkatalog.geonorge.no/?type=service&organization=Kartverket&DistributionProtocols=WMS-tjeneste)
+
+#### Eksempel tjeneste metadata:
 Topografisk Norgeskart: http://openwms.statkart.no/skwms1/wms.topo4
 
 Topografisk Norgeskart gråtone: http://openwms.statkart.no/skwms1/wms.topo4graatone
