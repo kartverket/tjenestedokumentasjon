@@ -6,9 +6,9 @@
 I motsetning til WMS, som leverer et kartbilde, leverer WFS (Web Feature Service) objektene som vektordata. Grensesnittet muliggjør søking etter innhold i datasettet ved å angi søkekriterier i et filter. Filterspørringene er beskrevet med et standardisert spørrespråk, ISO 19143 Filter Encoding/OGC FES 2.0
 
 Det er først og fremst tre forespørsler/kall som brukes:
-- GetCapabilities - henter metadata om tjenesten, for eksempel hvilke objekttyper som tilbys, hvilke type forespørsler og filtre tjenesten tilbyr.\
-- DescribeFeatureType - henter beskrivelse av datainnholdet i form av et XML skjema (XSD).\
-- GetFeature - henter selve datainnholdet/objekter med tilhørende egenskaper.
+- GetCapabilities - henter metadata om tjenesten, for eksempel hvilke objekttyper som tilbys, hvilke type forespørsler og filtre tjenesten tilbyr
+- DescribeFeatureType - henter beskrivelse av datainnholdet i form av et XML skjema (XSD)
+- GetFeature - henter selve datainnholdet/objekter med tilhørende egenskaper
 
 #### Eksempler på WFS-tjenester:
 Administrative enheter: https://wfs.geonorge.no/skwms1/wfs.administrative_enheter?&service=WFS&acceptversions=2.0.0&request=GetCapabilities 
