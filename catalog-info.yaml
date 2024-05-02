@@ -3,11 +3,10 @@ apiVersion: "backstage.io/v1alpha1"
 kind: "Component"
 metadata:
   name: "tjenestedokumentasjon"
-  tags:
-  - "public"
+  tags: []
 spec:
-  type: "documentation"
-  lifecycle: "production"
+  type: "experiment"
+  lifecycle: "experiment"
   owner: "datadeling_og_distribusjon"
   system: "tjenester"
 ---
