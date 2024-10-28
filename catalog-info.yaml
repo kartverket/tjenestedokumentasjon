@@ -9,29 +9,3 @@ spec:
   lifecycle: "experiment"
   owner: "datadeling_og_distribusjon"
   system: "tjenester"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Group"
-metadata:
-  name: "security_champion_tjenestedokumentasjon"
-  title: "Security Champion tjenestedokumentasjon"
-spec:
-  type: "security_champion"
-  parent: "land_security_champions"
-  members:
-  - "carsmie"
-  children:
-  - "resource:tjenestedokumentasjon"
----
-apiVersion: "backstage.io/v1alpha1"
-kind: "Resource"
-metadata:
-  name: "tjenestedokumentasjon"
-  links:
-  - url: "https://github.com/kartverket/tjenestedokumentasjon"
-    title: "tjenestedokumentasjon på GitHub"
-spec:
-  type: "repo"
-  owner: "security_champion_tjenestedokumentasjon"
-  dependencyOf:
-  - "component:tjenestedokumentasjon"
