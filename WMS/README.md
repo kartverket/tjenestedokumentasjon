@@ -21,19 +21,18 @@ Qgis brukermanual viser deg hvordan du åpner en WMS i QGIS.  Esris brukerveiled
 Geonorge har en oversikt som viser våre WMStjenester [som ligger her](https://kartkatalog.geonorge.no/?type=service&organization=Kartverket&DistributionProtocols=WMS-tjeneste)
 
 #### Eksempel tjeneste metadata:
-Topografisk Norgeskart: http://openwms.statkart.no/skwms1/wms.topo4
+Topografisk Norgeskart: http://wms.geonorge.no/skwms1/wms.topo?service=WMS&request=getcapabilities
 
-Topografisk Norgeskart gråtone: http://openwms.statkart.no/skwms1/wms.topo4graatone
+Topografisk Norgeskart gråtone: http://wms.geonorge.no/skwms1/wms.topograatone?service=WMS&request=getcapabilities
 
-Norges grunnkart http://openwms.statkart.no/skwms1/wms.norges_grunnkart
 
 #### Eksempler på tjenestekall:
-[Topografisk Norgeskart](https://openwms.statkart.no/skwms1/wms.topo4?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=topo4_WMS&width=1605&height=827&format=image/png)\
-[Topografisk Norgeskart gråtone](https://openwms.statkart.no/skwms1/wms.topo4.graatone?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=205250.6736350475,6657973.483797799,289901.233005172,6707898.1894429615&layers=topo4graatone_WMS&width=1684&height=994&format=image/png)\
-[Norges grunnkart](https://openwms.statkart.no/skwms1/wms.norges_grunnkart?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=norges_grunnkart&width=1605&height=827&format=image/png)
+[Topografisk Norgeskart](https://wms.geonorge.no/skwms1/wms.topo?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=topo_WMS&width=1605&height=827&format=image/png)\
+[Topografisk Norgeskart gråtone](https://wms.geonorge.no/skwms1/wms.topo.graatone?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=205250.6736350475,6657973.483797799,289901.233005172,6707898.1894429615&layers=topograatone_WMS&width=1684&height=994&format=image/png)\
+
 
 #### URL-mønster:
-https://openwms.statkart.no/skwms1/wms.topo4?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=topo4_WMS&width=1605&height=827&format=image/png
+https://wms.geonorge.no/skwms1/wms.topo?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=topo&styles=&width=1605&height=827&format=image/png
 
 
 
