@@ -27,8 +27,8 @@ Topografisk Norgeskart gråtone: http://wms.geonorge.no/skwms1/wms.topograatone?
 
 
 #### Eksempler på tjenestekall:
-[Topografisk Norgeskart](https://wms.geonorge.no/skwms1/wms.topo?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=topo_WMS&width=1605&height=827&format=image/png)\
-[Topografisk Norgeskart gråtone](https://wms.geonorge.no/skwms1/wms.topo.graatone?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=205250.6736350475,6657973.483797799,289901.233005172,6707898.1894429615&layers=topograatone_WMS&width=1684&height=994&format=image/png)\
+[Topografisk Norgeskart](https://wms.geonorge.no/skwms1/wms.topo?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=223832.52544569733,6598137.714134729,249316.94658206098,6611253.526634729&layers=topo&width=1605&height=827&format=image/png)\
+[Topografisk Norgeskart gråtone](https://wms.geonorge.no/skwms1/wms.topograatone?service=WMS&request=GetMap&version=1.3.0&BGCOLOR=0xFFFFFF&crs=EPSG:25833&bbox=205250.6736350475,6657973.483797799,289901.233005172,6707898.1894429615&layers=topograatone&width=1684&height=994&format=image/png)\
 
 
 #### URL-mønster:
