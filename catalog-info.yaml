@@ -6,6 +6,6 @@ metadata:
   tags: []
 spec:
   type: "experiment"
-  lifecycle: "experiment"
+  lifecycle: "experimental"
   owner: "datadeling_og_distribusjon"
   system: "tjenester"
