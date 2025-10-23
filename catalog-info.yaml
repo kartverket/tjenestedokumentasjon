@@ -5,7 +5,7 @@ metadata:
   name: "tjenestedokumentasjon"
   tags: []
 spec:
-  type: "experiment"
-  lifecycle: "experimental"
+  type: "documentation"
+  lifecycle: "production"
   owner: "datadeling_og_distribusjon"
   system: "tjenester"
